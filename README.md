@@ -5,7 +5,7 @@
 The Bot Includes : <br> <br>
 <li>`/editentry` - to edit entries of players </li> <br>
 <li>`/ping` - to show the bot's latency</li> <br>
-<li> `/setp` - to add information </li> <br>
+<li> `/setp <ign> <gameid> <realname><devicename>` - to add information </li> <br> [you can change /setp command from the index.js file according to your preference.]
       and lastly <br><br>
 <li> `/squadinfo` - to show all the player entries. </li> <br><br>
 

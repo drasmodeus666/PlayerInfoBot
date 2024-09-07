@@ -12,11 +12,69 @@ The Bot Includes : <br> <br>
 <b>The Bot Also Has Global Slash Commands Registration Included. </b> <br>
 
 ## Setup PROCESS: <br><br> 
-Fork This file to Replit --> 
+### Here are some Important Links which You'll Be Needing - https://discord.com/developers/applications/
 
-      replit.com/github.com/@drasmodeus666/PlayerInfoBot
- and also Select Node.js from Language (in case if it doesn't show's Node.js automatically)
-      
- First of all create an application by going to https://discord.com/developers/application/ , name the application whatever you want to name. After That, Go TO  <br> <br>    ![image](https://github.com/Pronoy2007/PlayerInfoBot/assets/82769834/1d2428b6-b71f-4708-ae83-9b5f303fca7d)   and copy your application id. after that simply go to `URL Generator` below 'General' in OAuth2. After That check those boxes    ![image](https://github.com/Pronoy2007/PlayerInfoBot/assets/82769834/562528b3-523d-4099-84bc-fe59462afac0). <br>   and scroll down and copy the link and invite the bot to your desired server. <br> <b> Now THE MOST important part,</b> go to Bot Section and Uncheck the public bot option (if you want your bot to be private), then scroll down and turn on these options    ![image](https://github.com/Pronoy2007/PlayerInfoBot/assets/82769834/3d31f6f1-596a-4f11-9968-4df9cfcd1f0a).   Now Go TO the Index.js file in replit and replace  <b> your application id with 'APPLICATION_ID' (which is in line 80) </b>. Then go to the BOT section and reset your token via clicking on 'Reset Token' button, and replace your token with  <b> 'TOKEN' (you have to replace token in two lines, line number 10 and 149) </b>. And Now, The bot is ready to run. 
+1. Clone the Repository or Download it
+First, clone the repository to your local machine:
+`git clone <gh repo clone drasmodeus666/Player-Info-Bot-v2.>
+cd Player-Info-Bot`
+<br> <br>
 
-  
+
+2. Directory Structure
+Here’s a quick overview of the project structure:
+
+Player-Info-Bot <br> <br>
+├── Commands <br>
+│   ├── ping.js <br>
+│   ├── addplayer.js <br>
+│   ├── removeplayer.js <br>
+│   ├── getplayer.js <br>
+│   ├── info.js <br>
+│   ├── help.js <br>
+├── Data <br>
+│   └── players.json <br>
+├── .env <br>
+├── deploy-commands.js <br>
+└── index.js <b> <br> <br>
+
+3. Install Dependencies
+Make sure you have Node.js installed. Then, install the required dependencies:
+
+`npm install`
+<br> <br>
+
+4. Configure Environment Variables and Config File
+.env File: Ensure your .env file in the root directory contains the following variables:
+`DISCORD_TOKEN=your-bot-token` <br> <br>
+
+`CLIENT_ID=your-client-id` <br> <br>
+
+`GUILD_ID=your-guild-id` <br> <br>
+
+Replace your-bot-token, your-client-id, and your-guild-id with your actual bot token, client ID, and guild ID.
+
+config.json File: Create or update the config.json file in the root directory with the necessary configuration:
+JSON
+
+`{
+  "token": "your-bot-token",
+  "clientId": "your-client-id",
+  "guildId": "your-guild-id"
+}`
+Replace your-bot-token, your-client-id, and your-guild-id with your actual bot token, client ID, and guild ID. <br> <br>
+
+
+5. Deploy Commands <br> <br>
+
+Run the deploy-commands.js script to register your bot’s commands:
+
+`node deploy-commands.js`
+<br> <br>
+6. Run the Bot <br> <br>
+Start your bot by running:
+
+`node index.js`
+
+
+
